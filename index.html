@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="app.js"></script>
+</head>
+<body onload="LoadData()">
+
+    <div class="header">
+        <div class="user-info">
+            <span class="name">Имя пользователя</span>
+            <span class="age">Тренировка</span>
+        </div>
+        <div class="input-fields">
+            <input type="text" placeholder="Поле 1">
+            <input type="text" placeholder="Поле 2">
+            <input type="text" placeholder="Поле 3">
+        </div>
+    </div>
+    <div class="content">
+        <p>Первый параграф</p>
+        <p>Второй параграф</p>
+        <p>Третий параграф</p>
+    </div>
+    <form>
+        <input type="text" id="fName" />
+        <input type="text" id="fPassword" />
+        <input type="button" value="Войти" onclick="CheckClient()" />
+        <input type="button" value="Выйти" onclick="ClearClientLoginData()" />
+    </form>
+    <form>
+        <input type="text" id="fExercise" />
+        <input type="text" id="fHowLong" />
+        <input type="text" id="fKcal" />
+        <input type="button" value="Сохранить" onclick="SaveExericeData()" />
+    </form>
+</body>
+</html>
